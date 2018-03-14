@@ -38,7 +38,7 @@ const validateId = id =>{
       reject(new Error(`Falta el parámetro <id>.`));
     } else {
       id = parseInt(id);
-      if (NUmber.isNaN(id)) {
+      if (Number.isNaN(id)) {
         reject(new Error(`El valor del parámetro <id> no es un número.`));
       } else {
         resolve(id);
